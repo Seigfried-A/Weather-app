@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="/img/weather.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+  </head>
+
+
+  
+  <body>
+    <div class="main-content">
+       {{>header}}
+
+       <p>Input your location below to check your weather details </p>
+       <form>
+         <input class="weather-input" placeholder="Location">
+         <button class="weather-btn"> Search</button>
+       </form>
+
+
+      <p class="p__1"></p>
+      <br/>
+      <p class="p__2"></p>
+    </div>
+
+   <footer>
+    {{>footer}}
+  </footer>
+  <script src="./js//script.js"></script>
+  </body>
+</html>
