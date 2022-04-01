@@ -1,5 +1,4 @@
 const request = require("request");
-const chalk = require("chalk");
 // Goal: Create a reusable function for getting the forecast
 //
 // 1. Setup the "forecast" function in utils/forecast.js
