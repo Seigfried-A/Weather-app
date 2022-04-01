@@ -5,6 +5,7 @@ const express = require("express");
 const hbs = require("hbs");
 
 const app = express();
+port = process.env.PORT || 3000;
 
 const pathDir = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
@@ -61,8 +62,7 @@ app.get("/weather", (req, res) => {
         res.send({
           forecast: forecastData,
           location,
-          address: req.query.address
-
+          address: req.query.address,
         });
       });
     }
@@ -83,6 +83,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("server started sucessfully");
+app.listen(port, () => {
+  console.log("server started sucessfully on " + port);
 });
